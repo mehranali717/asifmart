@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layout/mainLayout";
-import { AboutUs, Home } from "./pages";
+import { AboutUs, ContactUs, Home } from "./pages";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/" element={<MainLayout />} >
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Route>
       </Routes>
     </>

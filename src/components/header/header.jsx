@@ -5,8 +5,8 @@ const Header = () => {
     <header>
       <div className="container">
         <nav className="navbar navbar-light py-3">
-          <Link className="navbar-brand" href="#" style={{ width:'150px' }}>
-            <img src="../../assets/images/white-logo.png" alt="logo" width="100%"/>
+          <Link className="navbar-brand" to={"/"} style={{ width:'150px' }}>
+            <img src="../../assets/images/logo.png" alt="logo" width="100%"/>
           </Link>
           {/* <button
             className="navbar-toggler"
