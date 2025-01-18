@@ -242,6 +242,17 @@ h1 {
 .contact_us_section .default-btn {
   padding: 10px !important;
 }
+.phone-input-button {
+  background-color: var(--fill-primary-black);
+  border: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.phone-input-button:hover {
+  background-color: var(--hover-color);
+}
+
 /* introduction */
 .introduction {
   background-image: radial-gradient(var(--fill-radial-gradient));
