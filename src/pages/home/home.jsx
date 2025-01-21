@@ -17,7 +17,7 @@ const Home = () => {
                 transactions. Our store prioritizes convenience, trust and
                 exceptional support.
               </span>
-              <button className="default-btn">Shop Now</button>
+              {/* <button className="default-btn">Shop Now</button> */}
             </div>
             <div className="col-lg-6 splitScreen" data-aos="zoom-in">
               <img src="../../assets/images/allProducts.png" alt="" />
@@ -33,16 +33,15 @@ const Home = () => {
           Showcasing a wide range of bestsellers, from electronics to
           lifestyle essentials.
         </p>
-        <marquee behavior="scroll" direction="left" scrollamount="30">
-          <img src="../../assets/images/rasasi.png" alt="Image 1" />
+        <marquee behavior="scroll" direction="left" scrollamount="10" className="morqueeWrapper">
+          <img src="../../assets/images/yardley_logo.png" alt="Image 1" />
           <img src="../../assets/images/noon.svg" alt="Image 2" />
-          <img src="../../assets/images/sanita.svg" alt="Image 3" />
-          <img src="../../assets/images/rasasi.png" alt="Image 1" />
+          <img src="../../assets/images/fine.png" alt="Image 3" />
+          <img src="../../assets/images/sanita.png" alt="Image 3" />
+          <img src="../../assets/images/yardley_logo.png" alt="Image 1" />
           <img src="../../assets/images/noon.svg" alt="Image 2" />
-          <img src="../../assets/images/sanita.svg" alt="Image 3" />
-          <img src="../../assets/images/rasasi.png" alt="Image 1" />
-          <img src="../../assets/images/noon.svg" alt="Image 2" />
-          <img src="../../assets/images/sanita.svg" alt="Image 3" />
+          <img src="../../assets/images/fine.png" alt="Image 3" />
+          <img src="../../assets/images/sanita.png" alt="Image 3" />
         </marquee>
       </section>
 

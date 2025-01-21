@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <>
       <Header />
-      <div style={{paddingTop:"136px"}}>
+      <div className="contentWrapper" >
       <Outlet />
       </div>
       <Footer />

@@ -54,7 +54,7 @@ const Footer = () => {
         <span className="line" data-aos="fade-right"></span>
         <div className="row mt-4">
           <div className="col text-center copyrights">
-            <p>&copy; 2024 sif. All rights reserved.</p>
+            <p>&copy; 2024 Asif. All rights reserved.</p>
           </div>
         </div>
       </div>
