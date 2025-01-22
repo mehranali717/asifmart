@@ -23,24 +23,13 @@ const Header = () => {
   return (
     <header>
       <div className="container-fluid container-lg">
-        <nav className="navbar navbar-light py-3">
-          <div className="d-flex align-items-center justify-content-between logoWrapper">
+        <nav className="navbar navbar-light pt-2 pb-1 d-flex align-items-center">
+          {/* <div className="d-flex align-items-center justify-content-between logoWrapper"> */}
             <Link className="navbar-brand" to={"/"}>
               <img src="../../assets/images/logo.png" alt="logo" width="100%" />
             </Link>
-            <button
-              className={`navbar-toggler d-lg-none ${prevState ? "open" : ""}`}
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded={prevState}
-              aria-label="Toggle navigation"
-              onClick={() => toggleMenu(!prevState)}
-            >
-              <span className="line"></span>
-            </button>
-          </div>
+            
+          {/* </div> */}
 
           {showMenu && (
             <div className=" " id="navbarSupportedContent">
@@ -63,7 +52,20 @@ const Header = () => {
               </ul>
             </div>
           )}
+          <button
+              className={`navbar-toggler d-lg-none ${prevState ? "open" : ""}`}
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded={prevState}
+              aria-label="Toggle navigation"
+              onClick={() => toggleMenu(!prevState)}
+            >
+              <span className="line"></span>
+            </button>
         </nav>
+
       </div>
     </header>
   );

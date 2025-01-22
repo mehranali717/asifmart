@@ -1,6 +1,10 @@
 import { Products } from "../../fakeData/data";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 const Home = () => {
+  useEffect(()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  },[])
   return (
     <>
       {/* <!-- Hero Section --> */}
@@ -35,13 +39,24 @@ const Home = () => {
         </p>
         <marquee behavior="scroll" direction="left" scrollamount="10" className="morqueeWrapper">
           <img src="../../assets/images/yardley_logo.png" alt="Image 1" />
-          <img src="../../assets/images/noon.svg" alt="Image 2" />
-          <img src="../../assets/images/fine.png" alt="Image 3" />
+          <img src="../../assets/images/fine.png" alt="Image 2" />
           <img src="../../assets/images/sanita.png" alt="Image 3" />
+          <img src="../../assets/images/rasasi.png" alt="Image 4" />
+
           <img src="../../assets/images/yardley_logo.png" alt="Image 1" />
-          <img src="../../assets/images/noon.svg" alt="Image 2" />
-          <img src="../../assets/images/fine.png" alt="Image 3" />
+          <img src="../../assets/images/fine.png" alt="Image 2" />
           <img src="../../assets/images/sanita.png" alt="Image 3" />
+          <img src="../../assets/images/rasasi.png" alt="Image 4" />
+
+          <img src="../../assets/images/yardley_logo.png" alt="Image 1" />
+          <img src="../../assets/images/fine.png" alt="Image 2" />
+          <img src="../../assets/images/sanita.png" alt="Image 3" />
+          <img src="../../assets/images/rasasi.png" alt="Image 4" />
+
+          <img src="../../assets/images/yardley_logo.png" alt="Image 1" />
+          <img src="../../assets/images/fine.png" alt="Image 2" />
+          <img src="../../assets/images/sanita.png" alt="Image 3" />
+          <img src="../../assets/images/rasasi.png" alt="Image 4" />
         </marquee>
       </section>
 

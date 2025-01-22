@@ -45,6 +45,7 @@ body {
   --fill-base-white: #fff;
   --fill-base-yellow: #ffad31dd;
   --fill-primary-yellow: #ffad31;
+  --fill-light-Turquoise: #79f7f5;
   --fill-secondary-black: #1e1c1f;
   --fill-primary-black: #3c373d;
   --fill-base-grey: #f3f5f5;
@@ -161,7 +162,7 @@ header {
 }
 
 .navbar-brand {
-  max-width: 100px;
+  max-width: 80px;
   padding: 25px 0px;
   margin: 0;
   color: var(--fill-base-white) !important;
@@ -174,7 +175,7 @@ header {
 .nav-list {
   display: flex;
   flex-direction: row !important;
-  column-gap: 22.5px;
+  column-gap: 10.5px;
 }
 
 .nav-item a {
@@ -190,7 +191,7 @@ header {
 .nav-link {
   color: var(--fill-base-yellow) !important;
   fill: var(--fill-base-white) !important;
-  font-size: 15px;
+  font-size: 9px !important;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -621,8 +622,9 @@ footer .list-inline-item i:hover {
 }
 .navbar-toggler {
   position: relative;
-  width: 50px;
-  height: 30px;
+  width: 20px;
+  height: 10px;
+  padding: 0 !important;
   background: none;
   border: none;
   cursor: pointer;
@@ -681,7 +683,7 @@ footer .list-inline-item i:hover {
   box-shadow: none !important;
 }
 .morqueeWrapper {
-  background-color: var(--fill-base-yellow);
+  background-color: var(--fill-light-Turquoise);
   padding: 30px 0px;
 }
 /* Responsivness */
@@ -692,6 +694,12 @@ footer .list-inline-item i:hover {
   .Features .card {
     width: 30% !important;
     flex: unset !important;
+  }
+  .nav-link {
+    font-size: 20px !important;
+  }
+  .nav-list {
+    column-gap: 22px;
   }
 }
 

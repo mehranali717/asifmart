@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
@@ -26,6 +26,9 @@ const ContactUs = () => {
         }
       );
   };
+   useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[])
   return (
     <>
       <section className="contact_us_section">

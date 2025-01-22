@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const AboutUs = () => {
+   useEffect(()=>{
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },[])
   return (
     <section className="about_us_section">
       <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
