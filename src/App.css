@@ -82,7 +82,7 @@ body {
 }
 .contentWrapper {
   background: radial-gradient(var(--fill-radial-gradient));
-  padding-top: 136px;
+  padding-top: 80px;
 }
 .default-btn:hover {
   background: var(--fill-primary-yellow);
@@ -291,6 +291,11 @@ h1 {
   background-size: contain;
   position: relative;
 }
+.morqueeWrapper {
+  background-color: var(--fill-light-Turquoise);
+  padding: 15px 0px;
+  overflow: hidden;
+}
 
 .morquee img {
   max-width: 200px;
@@ -457,6 +462,12 @@ footer .navbar-brand {
 
 footer .social-icons {
   padding: 0;
+  row-gap: 10px;
+}
+footer .list-inline-item address {
+  font-style: normal;
+  font-style: italic;
+  font-size: 13px !important;
 }
 
 footer .social-icons li {
@@ -701,17 +712,24 @@ footer .list-inline-item i:hover {
   .nav-list {
     column-gap: 22px;
   }
+  .contentWrapper {
+    padding-top: 100px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
 .logoWrapper{
   width: 100%;
 }
+
 }
 @media only screen and (min-width: 992px) {
   header {
     background: radial-gradient(var(--fill-radial-gradient));
     background-size: cover;
+  }
+  .contentWrapper {
+    padding-top: 156px;
   }
   .splitScreen {
     padding-top: 0;

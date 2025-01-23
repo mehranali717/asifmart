@@ -1,0 +1,20 @@
+  .marqueeTrack {
+    display: flex;
+    width: calc(200%);
+    animation: scroll 10s linear infinite;
+  }
+  
+  .marqueeTrack img {
+    height: 80px;
+    margin: 0 10px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

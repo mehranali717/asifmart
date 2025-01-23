@@ -8,7 +8,6 @@ const Header = () => {
   const toggleMenu = (prevState) => {
     setPrevState(prevState);
   };
-  console.log({ prevState });
   useEffect(() => {
     const handleResize = () => {
       setIsLgScreen(window.innerWidth >= 992);
