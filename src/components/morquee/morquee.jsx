@@ -1,7 +1,8 @@
 import React from "react";
 import "./marquee.css";
+import Marquee from "react-fast-marquee";
 
-const Marquee = () => {
+const MarqueeSlider = () => {
   const images = [
     "../../assets/images/yardley_logo.png",
     "../../assets/images/fine.png",
@@ -15,16 +16,13 @@ const Marquee = () => {
 
   return (
     <div className="morqueeWrapper">
-      <div className="marqueeTrack">
+      <Marquee >
         {images.map((img, index) => (
           <img key={index} src={img} alt={`Brand ${index + 1}`} />
         ))}
-        {images.map((img, index) => (
-          <img key={`duplicate-${index}`} src={img} alt={`Brand duplicate ${index + 1}`} />
-        ))}
-      </div>
+      </Marquee>
     </div>
   );
 };
 
-export default Marquee;
+export default MarqueeSlider;
